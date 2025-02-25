@@ -56,11 +56,20 @@
 .sticky {
   position: sticky;
 }
+.top-1\/2 {
+  top: calc(1/2 * 100%);
+}
+.left-1\/2 {
+  left: calc(1/2 * 100%);
+}
 .isolate {
   isolation: isolate;
 }
 .isolation-auto {
   isolation: auto;
+}
+.z-50 {
+  z-index: 50;
 }
 .z-auto {
   z-index: auto;
@@ -136,6 +145,12 @@
 }
 .container\! {
   width: 100% !important;
+}
+.mt-auto {
+  margin-top: auto;
+}
+.mr-auto {
+  margin-right: auto;
 }
 .box-border {
   box-sizing: border-box;
@@ -239,6 +254,9 @@
 .w-1\/2 {
   width: calc(1/2 * 100%);
 }
+.w-5\/6 {
+  width: calc(5/6 * 100%);
+}
 .w-screen {
   width: 100vw;
 }
@@ -333,6 +351,14 @@
   --tw-translate-y: 100%;
   translate: var(--tw-translate-x) var(--tw-translate-y);
 }
+.-translate-x-1\/2 {
+  --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+}
+.-translate-y-1\/2 {
+  --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+}
 .translate-3d {
   translate: var(--tw-translate-x) var(--tw-translate-y) var(--tw-translate-z);
 }
@@ -362,6 +388,9 @@
 }
 .animate-none {
   animation: none;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 .touch-pinch-zoom {
   --tw-pinch-zoom: pinch-zoom;
@@ -713,6 +742,9 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.overflow-y-auto {
+  overflow-y: auto;
+}
 .scroll-auto {
   scroll-behavior: auto;
 }
@@ -911,6 +943,9 @@
 }
 .bg-origin-padding {
   background-origin: padding-box;
+}
+.fill-current {
+  fill: currentColor;
 }
 .fill-none {
   fill: none;
@@ -1224,6 +1259,9 @@
 .scheme-only-light {
   color-scheme: only light;
 }
+.opacity-25 {
+  opacity: 25%;
+}
 .mix-blend-plus-darker {
   mix-blend-mode: plus-darker;
 }
@@ -1343,6 +1381,10 @@
 }
 .transition-normal {
   transition-behavior: normal;
+}
+.duration-200 {
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
 }
 .ease-linear {
   --tw-ease: linear;
@@ -1750,6 +1792,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-ease {
   syntax: "*";
   inherits: false;
@@ -1767,10 +1813,6 @@
   inherits: false;
 }
 @property --tw-contain-style {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-duration {
   syntax: "*";
   inherits: false;
 }
