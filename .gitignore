@@ -1,0 +1,21 @@
+# Dependências do Node.js
+node_modules/
+package-lock.json
+
+# Cache do Tailwind CSS
+.tailwind/
+
+# Arquivos de saída do Tailwind
+src/output.css
+
+# Logs e sistema
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Configurações do editor
+.vscode/
+.idea/
+*.swp
+*.swo
