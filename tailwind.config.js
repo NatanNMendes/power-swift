@@ -7,7 +7,7 @@ module.exports = {
     theme: {
       extend: {
         colors: {
-          'red': '#F74640',
+          'red-power-swift': '#F74640',
         },
       },
     },
